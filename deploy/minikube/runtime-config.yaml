@@ -1,0 +1,8 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: rca-observability-config
+  namespace: ai-agent
+data:
+  loki_url: http://loki-gateway.monitoring.svc.cluster.local
+  langfuse_environment: minikube

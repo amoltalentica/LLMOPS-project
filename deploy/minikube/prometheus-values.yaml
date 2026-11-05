@@ -1,0 +1,18 @@
+grafana:
+  persistence:
+    enabled: false
+  sidecar:
+    dashboards:
+      enabled: true
+      label: grafana_dashboard
+      labelValue: "1"
+    datasources:
+      enabled: true
+      label: grafana_datasource
+      labelValue: "1"
+
+prometheus:
+  prometheusSpec:
+    retention: 24h
+    retentionSize: 5GB
+    storageSpec: {}

@@ -1,0 +1,22 @@
+# Small local-demo volumes; increase these for meaningful long-term retention.
+postgresql:
+  storage:
+    requestedSize: 4Gi
+
+redis:
+  dataStorage:
+    requestedSize: 1Gi
+
+clickhouse:
+  cluster:
+    storage:
+      size: 5Gi
+  keeper:
+    replicas: 1
+    storage:
+      size: 1Gi
+
+s3:
+  allInOne:
+    data:
+      size: 3Gi

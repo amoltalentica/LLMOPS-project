@@ -1,0 +1,14 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+resources:
+  - ../../gitops/apps/namespaces.yaml
+  - ../../gitops/apps/order-service/deployment.yaml
+  - ../../gitops/apps/order-service/service.yaml
+  - ../../gitops/apps/product-service/deployment.yaml
+  - ../../gitops/apps/product-service/service.yaml
+  - ../../gitops/apps/sre-agent/deployment.yaml
+  - ../../gitops/apps/sre-agent/rbac.yaml
+  - ../../gitops/apps/sre-agent/service.yaml
+  - ../minikube/observability.yaml
+  - runtime-config.yaml

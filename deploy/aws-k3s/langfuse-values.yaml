@@ -1,0 +1,21 @@
+postgresql:
+  storage:
+    requestedSize: 10Gi
+
+redis:
+  dataStorage:
+    requestedSize: 2Gi
+
+clickhouse:
+  cluster:
+    storage:
+      size: 20Gi
+  keeper:
+    replicas: 1
+    storage:
+      size: 5Gi
+
+s3:
+  allInOne:
+    data:
+      size: 10Gi
